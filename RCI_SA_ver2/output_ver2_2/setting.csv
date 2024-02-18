@@ -1,0 +1,43 @@
+,alpha,accept_rate,L,stop criterion,neighbor_sol,initial_sol,Runtime_50,Runtime_75,Runtime_100,Runtime_200,Performance_50,Performance_75,Performance_100,Performance_200,success_rate_50,success_rate_CVRPSep_50,success_rate_75,success_rate_CVRPSep_75,success_rate_100,success_rate_CVRPSep_100,success_rate_200,success_rate_CVRPSep_200
+CVRPSep init (First cut),,,,,,CVRPSep,,,,,41.8165,51.9983,54.5043,65.612,,,,,,,,
+CVRPSep init (Best cut),,,,,,CVRPSep,,,,,16.7526,30.4392,32.5385,43.4472,,,,,,,,
+ver1,0.95,0.8,n,0.01,1flip,set_max,0.9s,1.1s,1.4s,2.3s,55.7964,67.7561,72.1,90.9774,,,,,,,,
+ver2,0.95,0.8,4*nC2,0.01,2filp,set_max,50s,2m,3m 45s,15m42s,11.4562,31.3429,39.9459,85.57,,,,,,,,
+ver3,0.95,0.8,4*nC2,0.01,2flip_neighbor,set_one,17s,1m20s,3m,14m30s,34.2849,45.8962,53.3461,73.9728,,,,,,,,
+ver4,0.95,0.8,n,0.01,1flip,set_CVRPSep&one,0.8s,1.1s,1.5s,3s,28.1715,40.3673,44.5774,62.1797,0.97,0.97,0.87,0.87,0.85,0.85,0.73,0.73
+ver5,0.95,0.8,4*nC2,0.01,2filp,set_CVRPSep&one,46s,2m,3m40s,14m30s,6.0388,20.379,32.1576,55.4415,1,0.97,0.9,0.87,0.92,0.85,0.73,0.73
+ver6,0.95,0.8,4*nC2,0.01,2flip_neighbor,set_CVRPSep&one,17s,1m20s,2m 50s,12m40s,24.938,35.9218,40.6771,57.9134,0.97,0.97,0.9,0.87,0.87,0.85,0.73,0.73
+ver7,0.95,0.8,4*nC2,0.01,2flip_neighbor,set_max,13s,1m6s,2m30s,10m30s,32.5252,45.0197,50.0597,73.4208,,,,,,,,
+ver8,0.95,0.8,4*nC2,0.01,2flip_neighbor,set_random,10s,46s,1m30,4m30s,37.0032,42.4653,45.6009,73.7658,,,,,,,,
+ver9,0.95,0.8,4*nC2,0.01,2flip,set_one,47s,1m50s,3m20s,14m30s,10.0987,24.7909,39.4349,67.5102,,,,,,,,
+ver10,0.95,0.8,4*nC2,0.01,2flip,set_random,36s,1m30s,2m30s,10m50s,10.8368,30.9756,37.6189,69.7466,,,,,,,,
+ver11,0.95,0.8,4*nC2,0.01,2flip,set_CVRPSep_best&rand,50s,1m50s,3m30s,14m20s,6.6654,15.4478,20.9001,38.1849,0.98,0.97,0.9,0.87,0.89,0.85,0.73,0.73
+ver12,0.95,0.8,4*nC2,0.01,2flip_neighbor,set_CVRPSep_best&rand,18s,1m10s,2m50s,13m,11.0672,21.5949,22.2898,39.2289,0.98,0.97,0.88,0.87,0.88,0.85,0.74,0.73
+ver13,0.98,0.9,4*nC2,0.001,2flip,set_CVRPSep_best&rand,3m,7m 10s,13m,53m30s,0.6145,12.8138,18.0012,37.229,1,0.97,0.91,0.87,0.93,0.85,0.74,0.73
+ver14,0.95,0.8,n,0.01,1flip&demand,set_CVRPSep&one,1.3s,1.9s,2.5s,5.3s,23.4236,35.6436,41.4121,54.4882,0.98,0.97,0.89,0.87,0.85,0.85,0.73,0.73
+ver15,0.95,0.8,4*nC2,0.01,1flip&demand,set_CVRPSep_best&rand,1m20s,3m10s,5m40s,23m50s,9.1247,15.5408,15.178,17.5413,0.99,0.97,0.94,0.87,0.89,0.85,0.93,0.73
+ver16,0.95,0.8,4*nC2,0.01,2flip&demand,set_CVRPSep_best&rand,1m20s,3m20s,6m10s,25m40s,3.4905,7.8612,10.8351,16.8602,0.99,0.97,0.95,0.87,0.93,0.85,0.93,0.73
+ver17,0.95,0.8,4*nC2 (실제노드),0.01,2flip_in_delta_S &demand,set_CVRPSep_best&rand,2m,5m30s,10m30s,51m,0.9912,7.29,7.357,8.5917,1,0.97,0.95,0.87,0.95,0.85,0.98,0.73
+ver18,0.95,0.8,(n/3)^3,0.01,hamming_ball_3 &demand,set_CVRPSep_best&rand,1m50s,6m40s,15m,2h2m,3.0259,5.4181,11.6079,12.8734,0.98,0.97,0.97,0.87,0.91,0.85,0.93,0.73
+ver19,0.95,0.8,(n/3)^3,0.01,hamming_ball_3(무조건 플립) &demand,set_CVRPSep_best&rand,,9m,21m,,,18.2895,17.9767,,,0.97,0.92,0.87,0.9,0.85,,0.73
+ver20,0.95,0.8,4*nC2,0.01,hamming_ball_3 &demand,set_CVRPSep_best&rand,1m40s,4m,7m40s,31m10s,2.6748,7.6122,10.8091,21.2108,0.99,0.97,0.96,0.87,0.92,0.85,0.89,0.73
+ver21,0.95,0.8,4*nC2,0.01,hamming_ball_4 &demand,set_CVRPSep_best&rand,2m,5m,9m10s,38m30s,2.6925,6.9041,7.6679,22.2573,1,0.97,0.95,0.87,0.96,0.85,0.88,0.73
+ver22,0.95,0.8,4*nC2,0.01,hamming_ball_5 &demand,set_CVRPSep_best&rand,2m20s,5m40s,10m40s,42m50s,3.9527,9.0045,10.8749,22.4901,0.99,0.97,0.96,0.87,0.92,0.85,0.9,0.73
+ver23,0.95,0.8,4*nC2,0.01,hamming_ball_2 &demand,set_CVRPSep_best&rand,1m20s,3m20s,6m20s,25m50s,3.4663,9.5997,11.6219,16.2258,0.99,0.97,0.94,0.87,0.93,0.85,0.92,0.73
+ver24,0.95,0.8,4*nC2,0.01,3flip&demand,set_CVRPSep_best&rand,1m50s,4m20s,8m20s,36m40s,3.1141,8.2442,8.6585,18.2919,0.99,0.97,0.95,0.87,0.94,0.85,0.9,0.73
+ver25,0.95,0.8,4*nC2,0.01,3flip_in delta_S&demand,set_CVRPSep_best&rand,2m 30s,7m,13m50s,1h12m,0.2748,4.3907,6.2751,15.9961,1,0.97,0.96,0.87,0.95,0.85,1.9,0.73
+ver26,0.95,0.8,4*nC2,0.01,1filp→1flip&demand,set_CVRPSep_best&rand,6m34s,17m50s,30m,3h30m,4.2249,7.842,7.964,23.5194,0.99,0.97,0.96,0.87,0.95,0.85,0.84,0.73
+ver27,0.95,0.8,4*nC2,0.01,1filp_in_delta_S→1flip_in_delta_S&demand,set_CVRPSep_best&rand,10m10s,32m30s,1h,5h30m,0.3148,5.9104,6.0613,34.0113,1,0.97,0.96,0.87,0.95,0.85,0.79,0.73
+ver28,0.95,0.8,4*nC2,0.01,3flip_in_delta_S_and_demand&demand,set_CVRPSep_best&rand,3m,,,,7.1066,,,,0.99,0.97,,0.87,,0.85,,0.73
+ver29,0.95,0.8,4*nC2,0.01,2flip_in_delta_S_and_demand&demand,set_CVRPSep_best&rand,2m40s,,12m40s,,8.5847,,19.8768,,0.98,0.97,,0.87,0.88,0.85,,0.73
+ver30,0.95,0.8,4*nC2,0.01,2flip_in_delta_S&2flip_in_delta_S_and_demand&demand,set_CVRPSep_best&rand,,11m20s,,,,10.2669,,,,0.97,0.94,0.87,,0.85,,0.73
+ver31,0.95,0.8,4*nC2 (실제노드),0.01,2flip_in_delta_S &demand(improve),set_CVRPSep_best&rand,8m,25m40s,50m,4h46m,0.4815,4.0245,8.2993,11.605,1,0.97,0.97,0.87,0.94,0.85,0.95,0.73
+ver32,0.95,0.8,4*nC2 (실제노드),0.01,2flip_in_delta_S &demand(1add),set_CVRPSep_best&rand,2m,,11m10s,59m20s,0.2533,,10.4175,29.0582,1,0.97,,0.87,0.94,0.85,0.85,0.73
+ver33,0.95,0.8,4*nC2 (실제노드),0.01,2flip_in_delta_S &demand(3add),set_CVRPSep_best&rand,,,11m10s,,,,11.6856,,,0.97,,0.87,,0.85,,0.73
+ver34,0.95,0.8,4*nC2 (실제노드),0.01,2flip_in_delta_S &demand(rand),set_CVRPSep_best&rand,,,12m10s,,,,18.0948,,,0.97,,0.87,,0.85,,0.73
+ver35,0.95,0.8,4*nC2,0.01,2filp_in_delta_S→2flip_in_delta_S&demand,set_CVRPSep_best&rand,10m,30m,1h,5h30m,0.1266,4.3646,6.6659,35.2763,,0.97,,0.87,,0.85,,0.73
+ver36,0.95,0.8,4*nC2 (실제노드),0.01,2flip_in_delta_S(우선순위) &demand,set_CVRPSep_best&rand,,,13m,,,,11.1187,,,0.97,,0.87,0.93,0.85,,0.73
+ver37,0.95,0.8,4*nC2 (실제노드),0.01,2flip_in_delta_S(반 이상) &demand,set_CVRPSep_best&rand,,,9m10s,,,,26.8237,,,0.97,,0.87,0.85,0.85,,0.73
+ver38,0.95,0.8,4*nC2 (실제노드),0.01,파란색 중 랜덤,set_CVRPSep_best&rand,6m50s,17m50s,35m,3h26m,0.9582,8.2046,8.9178,12.2054,1,0.97,0.95,0.87,0.93,0.85,0.95,0.73
+ver39,0.98,0.9,4*nC2,0.001,2flip_in_delta_S &demand,set_CVRPSep_best&rand,8m40s,23m30s,44m20s,3h55m,0.2983,5.1523,7.3447,5.4615,1,0.97,0.96,0.87,0.94,0.85,0.99,0.73
+ver40,0.98,0.9,4*nC2,0.001,3flip_in_delta_S &demand,set_CVRPSep_best&rand,10m30s,27m30s,54m10s,4h50m,0.2533,3.096,5.0226,8.1804,1,0.97,0.97,0.87,0.95,0.85,0.97,0.73

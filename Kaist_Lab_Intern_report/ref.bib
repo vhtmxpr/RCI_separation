@@ -1,0 +1,51 @@
+@article{CVRP,
+author = {Denis Naddef and Giovanni Rinaldi},
+title = {3. Branch-And-Cut Algorithms for the Capacitated VRP},
+booktitle = {The Vehicle Routing Problem},
+year="2002",
+chapter = {},
+pages = {53-84},
+doi = {10.1137/1.9780898718515.ch3},
+URL = {https://epubs.siam.org/doi/abs/10.1137/1.9780898718515.ch3},
+eprint = {https://epubs.siam.org/doi/pdf/10.1137/1.9780898718515.ch3},
+    abstract = { 3.1 Introduction and Two-Index Flow Model In this chapter we are concerned with solving the basic symmetric Capacitated VRP (CVRP) to optimality by a method known as branch-and-cut. This method has been extremely successful in finding optimal solutions of large instances of a closely related problem, the Symmetric Traveling Salesman Problem (STSP). However, the amount of research effort spent to solve the CVRP by this method is not comparable with what has been dedicated to the STSP; the reader should not expect that we will report such spectacular results. The amount of research carried out on branch-and-cut applied to the CVRP is still quite limited and most of it is not yet published. The main goal of this chapter is to bring the results obtained in the last decade to public attention. At the time of this writing, several research groups were working on the subject, but not all their results were available. We mention these projects later so the interested reader can be alert for forthcoming results. We concentrate on what in Chapter 1 was called the two-index flow model. Whether this model is the most suitable for the branch-and-cut approach is not obvious, but the success of the corresponding model for the STSP certainly pleads for it. However, we also mention another formulation that seems to give promising preliminary computational results: the two-commodity network flow model studied by Baldacci, Mingozzi, and Hadjiconstantinou [7]. We start by recalling and integrating some of the definitions and the notation given in Chapter 1 and by stating a formal definition of the problem. We are given an undirected complete graph G (V, E) with node set V containing n + 1 nodes numbered 0, 1, …, n. The distinguished node 0 corresponds to the depot, and the other nodes correspond to the n clients. We denote by V0 the set of clients, i.e., V0 = V \ {0}. For each client i, we are given a positive demand di . With each edge e ∊ E, we associate a positive cost value ce which corresponds to the cost of traveling along it. }
+}
+
+@article{RCI,
+author="Fukasawa, Ricardo
+and Lysgaard, Jens
+and Poggi de Arag{\~a}o, Marcus
+and Reis, Marcelo
+and Uchoa, Eduardo
+and Werneck, Renato F.",
+editor="Bienstock, Daniel
+and Nemhauser, George",
+title="Robust Branch-and-Cut-and-Price for the Capacitated Vehicle Routing Problem",
+booktitle="Integer Programming and Combinatorial Optimization",
+year="2004",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="1--15",
+abstract="The best exact algorithms for the Capacitated Vehicle Routing Problem (CVRP) have been based on either branch-and-cut or Lagrangean relaxation/column generation. This paper presents an algorithm that combines both approaches: it works over the intersection of two polytopes, one associated with a traditional Lagrangean relaxation over q-routes, the other defined by bound, degree and capacity constraints. This is equivalent to a linear program with exponentially many variables and constraints that can lead to lower bounds that are superior to those given by previous methods. The resulting branch-and-cut-and-price algorithm can solve to optimality all instances from the literature with up to 135 vertices. This doubles the size of the instances that can be consistently solved.",
+isbn="978-3-540-25960-2"
+}
+
+@article{SA,
+author="Delahaye, Daniel
+and Chaimatanan, Supatcha
+and Mongeau, Marcel",
+editor="Gendreau, Michel
+and Potvin, Jean-Yves",
+title="Simulated Annealing: From Basics to Applications",
+bookTitle="Handbook of Metaheuristics",
+year="2019",
+publisher="Springer International Publishing",
+address="Cham",
+pages="1--35",
+abstract="Simulated Annealing (SA) is one of the simplest and best-known metaheuristic method for addressing difficult black box global optimization problems whose objective function is not explicitly given and can only be evaluated via some costly computer simulation. It is massively used in real-life applications. The main advantage of SA is its simplicity. SA is based on an analogy with the physical annealing of materials that avoids the drawback of the Monte-Carlo approach (which can be trapped in local minima), thanks to an efficient Metropolis acceptance criterion. When the evaluation of the objective-function results from complex simulation processes that manipulate a large-dimension state space involving much memory, population-based algorithms are not applicable and SA is the right answer to address such issues. This chapter is an introduction to the subject. It presents the principles of local search optimization algorithms, of which simulated annealing is an extension, and the Metropolis algorithm, a basic component of SA. The basic SA algorithm for optimization is described together with two theoretical properties that are fundamental to SA: statistical equilibrium (inspired from elementary statistical physics) and asymptotic convergence (based on Markov chain theory). The chapter surveys the following practical issues of interest to the user who wishes to implement the SA algorithm for its particular application: finite-time approximation of the theoretical SA, polynomial-time cooling, Markov-chain length, stopping criteria, and simulation-based evaluations. To illustrate these concepts, this chapter presents the straightforward application of SA to two classical and simple classical NP-hard combinatorial optimization problems: the knapsack problem and the traveling salesman problem. The overall SA methodology is then deployed in detail on a real-life application: a large-scale aircraft trajectory planning problem involving nearly 30,000 flights at the European continental scale. This exemplifies how to tackle nowadays complex problems using the simple scheme of SA by exploiting particular features of the problem, by integrating astute computer implementation within the algorithm, and by setting user-defined parameters empirically, inspired by the SA basic theory presented in this chapter.",
+isbn="978-3-319-91086-4",
+doi="10.1007/978-3-319-91086-4_1",
+url="https://doi.org/10.1007/978-3-319-91086-4_1"
+}
+
+
